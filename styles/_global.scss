@@ -1,0 +1,22 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: $font-main;
+    color: $text-color;
+    background: $light-gray;
+}
+h1, h2, h3, h4 {
+    font-family: $font-heading;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+section {
+    padding: 80px;
+}
+a {
+    text-decoration: none;
+}
