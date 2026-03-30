@@ -1,0 +1,27 @@
+.footer {
+    margin-top: 80px;
+    padding: 30px 0;
+    background: linear-gradient(
+        135deg,
+        #2ecc71,
+        #27ae60,
+    );
+    color: $white;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.social-icons a {
+    margin-left: 15px;
+    font-size: 22px;
+    color: $white;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: #b2f2d0;
+    transform: translateY(-3px);
+}
