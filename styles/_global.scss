@@ -4,7 +4,12 @@
 body {
     font-family: $font-main;
     color: $text-color;
-    background: $light-gray;
+    background: linear-gradient(
+        135deg,
+        #e6f9f0,
+        #d1f2e0,
+        #b2e8d4
+    );
 }
 h1, h2, h3, h4 {
     font-family: $font-heading;
@@ -15,8 +20,22 @@ h1, h2, h3, h4 {
     padding: 0 20px;
 }
 section {
-    padding: 80px;
+    padding: 80px 0;
 }
 a {
     text-decoration: none;
+}
+.btn {
+    background: $primary-color;
+    color: $white;
+    border: none;
+    margin-top: 30px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: $secondary-color;
 }

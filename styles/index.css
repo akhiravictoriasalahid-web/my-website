@@ -6,7 +6,7 @@
 body {
   font-family: "Mulish", sans-serif;
   color: #1a1a1a;
-  background: #f5f7fb;
+  background: linear-gradient(135deg, #e6f9f0, #d1f2e0, #b2e8d4);
 }
 
 h1, h2, h3, h4 {
@@ -20,11 +20,28 @@ h1, h2, h3, h4 {
 }
 
 section {
-  padding: 80px;
+  padding: 80px 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  background: #2ecc71;
+  color: #ffffff;
+  border: none;
+  margin-top: 30px;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #27ae60;
 }
 
 .navbar {
@@ -48,14 +65,14 @@ a {
 
 .logo {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 60px;
 }
 
 .nav-links a {
@@ -65,5 +82,74 @@ a {
 }
 
 .nav-links a:hover {
-  color: #4a6cf7;
+  color: #2ecc71;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 590px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  line-height: 1;
+}
+
+.hero-text span {
+  color: #2ecc71;
+}
+
+.hero-text p {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 30px;
+  color: #555;
+}
+
+.hero-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  padding: 25px;
+  border-radius: 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 350px;
+  max-height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
