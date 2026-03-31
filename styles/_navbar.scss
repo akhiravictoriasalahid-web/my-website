@@ -22,6 +22,88 @@
     color: $text-color;
     font-weight: 500;
 }
+.dropdown-menu a {
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    color: black;
+}
+.dropdown-menu a:hover {
+    color: $primary-color;
+}
+.dropdown-menu a:active {
+    background: gray;
+}
 .nav-links a:hover {
     color: $primary-color;
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none;
+}
+/* ==== TABLET ==== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        max-width: 350px;
+        padding: 25px;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+    }
+    .dropdown-menu.active {
+        display: flex;
+    }
+}
+/* ==== MOBILE ==== */
+@media (max-width: 480px) {
+    .nav-container {
+        position: relative;
+    }
+    .navbar {
+        padding: 20px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        max-width: 350px;
+        padding: 25px;
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    .dropdown-menu.active {
+        display: flex;
+    }
 }

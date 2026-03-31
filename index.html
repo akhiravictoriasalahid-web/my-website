@@ -19,10 +19,22 @@
             <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="pages/about.html">About</a>
-                <a href="pages/projects.html">Projects</a>
+                <a href="pages/portfolio.html">Portfolio</a>
                 <a href="pages/resume.html">Resume</a>
                 <a href="pages/contact.html">Contact</a>
             </nav>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+
+                <div class="dropdown-menu">
+                    <a href="index.html">Home</a>
+                    <a href="pages/about.html">About</a>
+                    <a href="pages/portfolio.html">Portfolio</a>
+                    <a href="pages/resume.html">Resume</a>
+                    <a href="pages/contact.html">Contact</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -57,5 +69,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const dropdown = document.querySelector('.dropdown-menu');
+
+        menuToggle.addEventListener('click', () => {
+            dropdown.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

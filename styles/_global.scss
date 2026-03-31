@@ -29,9 +29,10 @@ a {
     background: $primary-color;
     color: $white;
     border: none;
+    font-size: 20px;
     margin-top: 30px;
-    font-weight: 600;
-    padding: 12px 30px;
+    font-weight: bold;
+    padding: 20px 30px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
