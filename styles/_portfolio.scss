@@ -1,0 +1,69 @@
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.portfolio h2 span {
+    color: $primary-color;
+}
+.portfolio h2::after {
+    content: "";
+    max-width: 300px;
+    height: 4px;
+    background: $primary-color;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.project-card {
+    background: $white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.project-card img,
+.project-card video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.project-card h3 {
+    margin-bottom: 10px;
+}
+.project-card p {
+    color: $text-color;
+}
+.project-images {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.project-images img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.project-images img:first-child {
+    grid-row: span 2;
+}
+.project-images img:not(:first-child) {
+    height: 100%;
+    object-fit: cover;
+}
+.project-links {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+}
+.btn-outline {
+    background: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+}

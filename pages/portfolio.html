@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0897c49575.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>My WebPage</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">Junie.</a>
+
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+
+                <div class="dropdown-menu">
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="portfolio">
+        <div class="container">
+
+            <h2>Featured <span>Projects</span></h2>
+
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-images">
+                        <img src="../images/main-image.png" alt="Nature View">
+                        <img src="../images/WhyChooseUs.png" alt="Why Choose Us section with over looking nature">
+                        <img src="../images/destination-1.png" alt="Modern house with pool">
+                        <img src="../images/destination-2.png" alt="Rocky coast at sunset">
+                        <img src="../images/Testimonial.png" alt="Tourist testimonial section with traveler image">
+                    </div>
+
+                    <h3>Figma to HTML Website</h3>
+                    <p>Converted a Figma design into a responsive website using HTML, CSS, and Sass.</p>
+                </div>
+
+                <div class="project-card">
+                    <video controls>
+                        <source src="../videos/project-demo.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>Responsive Travel Website</h3>
+                    <p>I developed a responsive travel landing page based on a Figma design using HTML and SCSS.</p>
+                    <p>This project focuses on creating a clean layout, responsive structure, and pixel-perfect implementation across different screen sizes.</p>
+
+                    <div class="project-links">
+                        <a href="https://akhiravictoriasalahid-web.github.io/Bhromaon-website/" class="btn">Live Demo</a>
+                        <a href="https://github.com/akhiravictoriasalahid-web/Bhromaon-website" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+            <p>© 2026 Junie. All rights reserved.</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/akhiravictoriasalahid-web"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/junie-victoria-salahid-776285177/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/akhirasalahid"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/akhirasalahid/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const dropdown = document.querySelector('.dropdown-menu');
+
+        menuToggle.addEventListener('click', () => {
+            dropdown.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
