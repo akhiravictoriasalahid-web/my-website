@@ -730,6 +730,119 @@ a {
   font-size: 14px;
 }
 
+.contact {
+  text-align: center;
+}
+
+.contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 80px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact h2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #2ecc71;
+}
+
+.contact h2::after {
+  content: "";
+  max-width: 195px;
+  height: 4px;
+  background: #2ecc71;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.contact .subtitle {
+  margin-bottom: 60px;
+  color: #1a1a1a;
+}
+
+.contact .subtitle span {
+  color: #2ecc71;
+}
+
+.contact-info {
+  max-width: 350px;
+  width: 100%;
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact-info p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.contact-info i {
+  min-width: 20px;
+  font-size: 18px;
+  color: #2ecc71;
+}
+
+.card {
+  max-width: 420px;
+  width: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0 20px 40px;
+          box-shadow: 0 20px 40px;
+  padding: 40px;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #77aca2;
+}
+
 .footer {
   margin-top: 80px;
   padding: 30px 0;

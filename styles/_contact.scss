@@ -1,0 +1,80 @@
+.contact {
+    text-align: center;
+}
+.contact-content {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: flex-start;
+}
+.contact h2 {
+    align-items: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: $primary-color;
+}
+.contact h2::after {
+    content: "";
+    max-width: 195px;
+    height: 4px;
+    background: $primary-color;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+.contact .subtitle {
+    margin-bottom: 60px;
+    color: $text-color;
+}
+.contact .subtitle span {
+    color: $primary-color;
+}
+.contact-info {
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
+    flex: 1;
+}
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    gap: 10px;
+}
+.contact-info i {
+    min-width: 20px;
+    font-size: 18px;
+    color: $primary-color;
+}
+.card {
+    max-width: 420px;
+    width: 100%;
+    background: $white;
+    box-shadow: 0 20px 40px;
+    padding: 40px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #77aca2;
+}
+

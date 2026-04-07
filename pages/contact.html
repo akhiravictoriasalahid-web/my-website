@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0897c49575.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>My WebPage</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">Junie.</a>
+
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+
+                <div class="dropdown-menu">
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p class="subtitle">Let's work <span>together!</span></p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fa fa-envelope"></i>einuj27@gmail.com</p>
+                    <p><i class="fa fa-phone"></i>+4676 341 9878</p>
+                    <p><i class="fa fa-location-dot"></i>Vallgatan 28, Lgh 1101, 281 32 Hässleholm Sweden</p>
+                </div>
+
+                <div class="card">
+                    <form class="contact-form">
+                        <label for="name">FULL NAME</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Write your message here.."></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+            <p>© 2026 Junie. All rights reserved.</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/akhiravictoriasalahid-web"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/junie-victoria-salahid-776285177/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/akhirasalahid"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/akhirasalahid/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const dropdown = document.querySelector('.dropdown-menu');
+
+        menuToggle.addEventListener('click', () => {
+            dropdown.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
