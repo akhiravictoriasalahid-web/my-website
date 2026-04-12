@@ -36,8 +36,50 @@
     .about-container {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
     }
     .about-image img {
         max-width: 250px;
+    }
+    .about-text h2::after {
+    content: "";
+    max-width: 160px;
+    height: 4px;
+    background: $primary-color;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    }
+    .about-text {
+        max-width: 100%;
+    }
+    .about-text h2 {
+        font-size: 32px;
+    }
+    .about-text p {
+        font-size: 18px;
+    }
+}
+/* ==== MOBILE ==== */
+@media (max-width: 480px) {
+    .about-container {
+        gap: 25px;
+        padding: 0 15px;
+    }
+    .about-image img {
+        max-width: 180px;
+        border-radius: 15px;
+    }
+    .about-text h2 {
+        font-size: 26px;
+    }
+    .about-text h2::after {
+        max-width: 130px;
+        height: 3px;
+        margin: 8px auto 0;
+    }
+    .about-text p {
+        font-size: 15px;
+        line-height: 1.5;
     }
 }

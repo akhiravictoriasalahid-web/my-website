@@ -68,6 +68,15 @@ a {
   font-weight: 600;
   font-size: 30px;
   color: #1a1a1a;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color: #2ecc71;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .nav-links {
@@ -346,9 +355,51 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    gap: 40px;
   }
   .about-image img {
     max-width: 250px;
+  }
+  .about-text h2::after {
+    content: "";
+    max-width: 160px;
+    height: 4px;
+    background: #2ecc71;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+  }
+  .about-text {
+    max-width: 100%;
+  }
+  .about-text h2 {
+    font-size: 32px;
+  }
+  .about-text p {
+    font-size: 18px;
+  }
+}
+/* ==== MOBILE ==== */
+@media (max-width: 480px) {
+  .about-container {
+    gap: 25px;
+    padding: 0 15px;
+  }
+  .about-image img {
+    max-width: 180px;
+    border-radius: 15px;
+  }
+  .about-text h2 {
+    font-size: 26px;
+  }
+  .about-text h2::after {
+    max-width: 130px;
+    height: 3px;
+    margin: 8px auto 0;
+  }
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.5;
   }
 }
 .portfolio h2 {
@@ -730,6 +781,121 @@ a {
   font-size: 14px;
 }
 
+/* ==== MEDIA PRINT ==== */
+@media print {
+  body {
+    background: white !important;
+  }
+  header {
+    background: white !important;
+  }
+  @page {
+    margin: 0;
+  }
+  section {
+    page-break-inside: avoid;
+  }
+}
+/* ==== TABLET ==== */
+@media (max-width: 768px) {
+  .resume .container {
+    max-width: 100%;
+    margin: 10px;
+  }
+  .left {
+    width: 35%;
+    padding: 20px 15px;
+  }
+  .right {
+    width: 65%;
+  }
+  .header {
+    padding: 20px;
+  }
+  .header h1 {
+    font-size: 24px;
+  }
+  .header h3 {
+    font-size: 16px;
+  }
+  .content {
+    padding: 20px;
+  }
+  .block-title {
+    font-size: 16px;
+  }
+  .item h4 {
+    font-size: 16px;
+  }
+  .item p,
+  .item ul li {
+    font-size: 13px;
+  }
+}
+/* ==== MOBILE ==== */
+@media (max-width: 480px) {
+  .resume .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .left {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .profile-img img {
+    max-width: 120px;
+    min-height: 120px;
+  }
+  .left-section h3 {
+    text-align: center;
+  }
+  .contact li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header {
+    padding: 20px 10px;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+  .header h3 {
+    font-size: 14px;
+  }
+  .content {
+    padding: 15px;
+  }
+  .block-title {
+    font-size: 15px;
+  }
+  .timeline {
+    padding: 15px;
+  }
+  .item h4 {
+    font-size: 14px;
+  }
+  .item h4 span {
+    float: none;
+    display: block;
+    font-size: 12px;
+    margin-top: 3px;
+  }
+  .item p,
+  .item ul li {
+    font-size: 12px;
+  }
+}
 .contact {
   text-align: center;
 }
@@ -843,6 +1009,76 @@ textarea:focus {
   border-color: #77aca2;
 }
 
+/* ==== TABLET ==== */
+@media (max-width: 768px) {
+  .contact-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .contact-info {
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-info p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 500px;
+  }
+  .contact h2 {
+    font-size: 32px;
+  }
+  .contact .subtitle {
+    font-size: 18px;
+  }
+}
+/* ==== MOBILE ==== */
+@media (max-width: 480px) {
+  .contact {
+    padding: 40px 0;
+  }
+  .contact h2 {
+    font-size: 26px;
+  }
+  .contact .subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .contact-content {
+    gap: 30px;
+    padding: 0 10px;
+  }
+  .contact-info {
+    font-size: 14px;
+  }
+  .contact-info p {
+    font-size: 14px;
+  }
+  .card {
+    padding: 25px;
+    -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  input,
+  textarea {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
 .footer {
   margin-top: 80px;
   padding: 30px 0;

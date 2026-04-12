@@ -77,4 +77,65 @@ textarea:focus {
     outline: none;
     border-color: #77aca2;
 }
-
+/* ==== TABLET ==== */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .contact-info {
+        max-width: 200px;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-info p {
+        justify-content: center;
+    }
+    .card {
+        width: 100%;
+        max-width: 500px;
+    }
+    .contact h2 {
+        font-size: 32px;
+    }
+    .contact .subtitle {
+        font-size: 18px;
+    }
+}
+/* ==== MOBILE ==== */
+@media (max-width: 480px) {
+    .contact {
+        padding: 40px 0;
+    }
+    .contact h2 {
+        font-size: 26px;
+    }
+    .contact .subtitle {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .contact-content {
+        gap: 30px;
+        padding: 0 10px;
+    }
+    .contact-info {
+        font-size: 14px;
+    }
+    .contact-info p {
+        font-size: 14px;
+    }
+    .card {
+        padding: 25px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    input,
+    textarea {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
