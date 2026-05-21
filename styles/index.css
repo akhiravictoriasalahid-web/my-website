@@ -608,11 +608,13 @@ a {
 }
 
 .profile-img img {
+  width: 100%;
   max-width: 250px;
   min-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 4px;
+  display: block;
 }
 
 .left-section {
@@ -852,8 +854,9 @@ a {
     text-align: center;
   }
   .profile-img img {
-    max-width: 120px;
-    min-height: 120px;
+    max-width: 100%;
+    max-width: 180px;
+    height: auto;
   }
   .left-section h3 {
     text-align: center;
@@ -961,6 +964,14 @@ a {
   gap: 10px;
 }
 
+.contact-text {
+  max-width: 700px;
+  margin: -20px auto 50px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
 .contact-info i {
   min-width: 20px;
   font-size: 18px;
@@ -968,12 +979,13 @@ a {
 }
 
 .card {
-  max-width: 420px;
+  max-width: 500px;
   width: 100%;
   background: #ffffff;
   -webkit-box-shadow: 0 20px 40px;
           box-shadow: 0 20px 40px;
   padding: 40px;
+  margin: 0 auto;
 }
 
 .contact-form {
@@ -1008,6 +1020,12 @@ textarea:focus {
   border-color: #77aca2;
 }
 
+.contact .btn {
+  width: 70%;
+  margin: 10px auto 0;
+  display: block;
+}
+
 /* ==== TABLET ==== */
 @media (max-width: 768px) {
   .contact-content {
@@ -1040,6 +1058,10 @@ textarea:focus {
   .contact .subtitle {
     font-size: 18px;
   }
+  .contact-text {
+    font-size: 16px;
+    padding: 0 20px;
+  }
 }
 /* ==== MOBILE ==== */
 @media (max-width: 480px) {
@@ -1063,6 +1085,10 @@ textarea:focus {
   .contact-info p {
     font-size: 14px;
   }
+  .contact-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
   .card {
     padding: 25px;
     -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -1073,7 +1099,7 @@ textarea:focus {
     font-size: 13px;
     padding: 8px 10px;
   }
-  .btn {
+  .contact .btn {
     font-size: 16px;
     padding: 15px;
   }

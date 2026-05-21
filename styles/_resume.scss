@@ -29,10 +29,12 @@
     margin-bottom: 5px;
 }
 .profile-img img {
+    width: 100%;
     max-width: 250px;
     min-height: 200px;
     object-fit: cover;
     border: 4px;
+    display: block;
 }
 .left-section {
     margin-top: 0;
@@ -231,8 +233,9 @@
         text-align: center;
     }
     .profile-img img {
-        max-width: 120px;
-        min-height: 120px;
+        max-width: 100%;
+        max-width: 180px;
+        height: auto;
     }
     .left-section h3 {
         text-align: center;
